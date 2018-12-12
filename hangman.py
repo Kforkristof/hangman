@@ -20,6 +20,14 @@ def print_hangman(file="hangmans.txt", nth_pic=0):
         print(hangmans_list[nth_pic])
 
 
+def get_random_word(file="capitals.txt"):
+    with open(file, "r") as read_capitals:
+        capitals = read_capitals.read()
+        list_of_capitals = capitals.split(", ")
+        random_word = random.choice(list_of_capitals)
+        return random_word
+
+
 abc = ("abcdefghijklmnopqrstuvwxyz")
 correct = ("cica")
 wrongs = []
@@ -43,6 +51,7 @@ while wrong_guess < 3:
 def main():
     print_header()
     print_hangman(nth_pic=7)
+    get_random_word()
 
 
 main()
