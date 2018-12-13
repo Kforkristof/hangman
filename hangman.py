@@ -28,6 +28,7 @@ def get_random_word(file="capitals.txt"):
         return random_word
 
 
+"""
 abc = ("abcdefghijklmnopqrstuvwxyz")
 correct = ("cica")
 wrongs = []
@@ -46,7 +47,7 @@ while wrong_guess < 3:
         else:    
             wrongs.append(guess)
             show_wrong_latters(wrongs)
-
+"""
 
 def main():
     print_header()
